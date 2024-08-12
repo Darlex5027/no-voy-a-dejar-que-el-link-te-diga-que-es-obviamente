@@ -1,3 +1,4 @@
+
 function cuadrilatero(ctx, grosor, alto, largo, x, y) {
     ctx.moveTo(x, y);
     ctx.lineTo(x, y - (alto * grosor));
@@ -10,20 +11,20 @@ function letra(letra, ctx, grosor, x, y) {
     switch (letra) {
         case '3':
             ctx.beginPath();
-            x-= (3*grosor);
-            y-=.25*grosor;
+            x -= (3 * grosor);
+            y -= .25 * grosor;
             ctx.moveTo(x, y);
-            cuadrilatero(ctx, grosor, 2, 1, x+(4*grosor), y-(.5*grosor));
-            cuadrilatero(ctx, grosor, 2, 1, x+(4*grosor), y-(4*grosor));
+            cuadrilatero(ctx, grosor, 2, 1, x + (4 * grosor), y - (.5 * grosor));
+            cuadrilatero(ctx, grosor, 2, 1, x + (4 * grosor), y - (4 * grosor));
             cuadrilatero(ctx, grosor, .5, 3, x + (1 * grosor), y - (6 * grosor));
             cuadrilatero(ctx, grosor, .5, 3, x + (1 * grosor), y);
-            cuadrilatero(ctx, grosor, 1, 3, x+(1 * grosor), y - (3 * grosor));
+            cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (3 * grosor));
             ctx.fill();
             console.log(letra);
             break;
         case '<':
             ctx.beginPath();
-            ctx.moveTo(x,y);
+            ctx.moveTo(x, y);
             cuadrilatero(ctx, grosor, 1, 1, x + grosor, y - (3 * grosor));
             cuadrilatero(ctx, grosor, 1, 1, x + (2 * grosor), y - (4 * grosor));
 
@@ -64,6 +65,27 @@ function letra(letra, ctx, grosor, x, y) {
             cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (6 * grosor));
             cuadrilatero(ctx, grosor, 6, 1, x + (4 * grosor), y);
             cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (3 * grosor));
+            ctx.fill();
+            console.log(letra);
+
+            break;
+        case 'á':
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 6, 1, x, y);
+            cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (6 * grosor));
+            cuadrilatero(ctx, grosor, 6, 1, x + (4 * grosor), y);
+            cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (3 * grosor));
+            ctx.fill();
+
+            ctx.beginPath();
+
+            y -= grosor * 7.5;
+            x += grosor * 2;
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 1, 1, x, y);
+            cuadrilatero(ctx, grosor, 1, 1, x += grosor * 1, y -= grosor);
+            //cuadrilatero(ctx, grosor, 1, 2, x - (1 * grosor), y + (1 * grosor));
             ctx.fill();
             console.log(letra);
 
@@ -115,6 +137,26 @@ function letra(letra, ctx, grosor, x, y) {
             console.log(letra);
 
             break;
+
+        case 'é':
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 7, 1, x, y);
+            cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (6 * grosor));
+            cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y);
+            cuadrilatero(ctx, grosor, 1, 3, x, y - (3 * grosor));
+            ctx.fill();
+            console.log(letra);
+
+            y -= grosor * 7.5;
+            x += grosor * 2;
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 1, 1, x, y);
+            cuadrilatero(ctx, grosor, 1, 1, x += grosor * 1, y -= grosor);
+            //cuadrilatero(ctx, grosor, 1, 2, x - (1 * grosor), y + (1 * grosor));
+            ctx.fill();
+            console.log(letra);
+            break;
         case 'f':
             ctx.beginPath();
             ctx.moveTo(x, y);
@@ -153,6 +195,26 @@ function letra(letra, ctx, grosor, x, y) {
             cuadrilatero(ctx, grosor, 7, 1, x + (2 * grosor), y);
             cuadrilatero(ctx, grosor, 1, 3, x + (grosor), y - (6 * grosor));
             cuadrilatero(ctx, grosor, 1, 3, x + (grosor), y);
+            ctx.fill();
+            console.log(letra);
+
+            break;
+        case 'í':
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 7, 1, x + (2 * grosor), y);
+            cuadrilatero(ctx, grosor, 1, 3, x + (grosor), y - (6 * grosor));
+            cuadrilatero(ctx, grosor, 1, 3, x + (grosor), y);
+            ctx.fill();
+            console.log(letra);
+
+            ctx.beginPath();
+            y -= grosor * 7.5;
+            x += grosor * 2;
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 1, 1, x, y);
+            cuadrilatero(ctx, grosor, 1, 1, x += grosor * 1, y -= grosor);
+            //cuadrilatero(ctx, grosor, 1, 2, x - (1 * grosor), y + (1 * grosor));
             ctx.fill();
             console.log(letra);
 
@@ -243,6 +305,30 @@ function letra(letra, ctx, grosor, x, y) {
             console.log(letra);
 
             break;
+
+        case 'ó':
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 5, 1, x, y - (1 * grosor))
+            cuadrilatero(ctx, grosor, 5, 1, x + (4 * grosor), y - (1 * grosor))
+            cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (6 * grosor))
+            cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (0 * grosor))
+            ctx.fill()
+            console.log(letra);
+
+
+            ctx.beginPath();
+
+            y -= grosor * 7.5;
+            x += grosor * 2;
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 1, 1, x, y);
+            cuadrilatero(ctx, grosor, 1, 1, x += grosor * 1, y -= grosor);
+            //cuadrilatero(ctx, grosor, 1, 2, x - (1 * grosor), y + (1 * grosor));
+            ctx.fill();
+            console.log(letra);
+
+            break;
         case 'p':
             ctx.beginPath();
             ctx.moveTo(x, y);
@@ -310,6 +396,28 @@ function letra(letra, ctx, grosor, x, y) {
             cuadrilatero(ctx, grosor, 6, 1, x + (4 * grosor), y - (1 * grosor))
             cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (0 * grosor))
             ctx.fill()
+            console.log(letra);
+
+            break;
+        case 'ú':
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 6, 1, x, y - (1 * grosor))
+            cuadrilatero(ctx, grosor, 6, 1, x + (4 * grosor), y - (1 * grosor))
+            cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (0 * grosor))
+            ctx.fill()
+            console.log(letra);
+
+
+
+            ctx.beginPath();
+            y -= grosor * 7.5;
+            x += grosor * 2;
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 1, 1, x, y);
+            cuadrilatero(ctx, grosor, 1, 1, x += grosor * 1, y -= grosor);
+            //cuadrilatero(ctx, grosor, 1, 2, x - (1 * grosor), y + (1 * grosor));
+            ctx.fill();
             console.log(letra);
 
             break;

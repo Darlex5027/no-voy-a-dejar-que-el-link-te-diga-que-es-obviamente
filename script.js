@@ -503,12 +503,15 @@ function dibujarecur() {
     }
     if (i == 83) {
         ctx2.fillStyle = "black";
-        write("La verdad, no sabia como decirtelo hasta que se", ctx2, 5, 200, 600,)
+        write("La verdad, no sabía cómo decírtelo hasta que se", ctx2, 5, 200, 600,)
         write("me vino a la mente lo de la Moneda y las", ctx2, 5, 200, 700,)
-        write("animaciones que teniamos que hacer con Armando.", ctx2, 5, 200, 800,)
-        write("Me tarde mas de lo que pensaba y por eso no le", ctx2, 5, 200, 900,)
-        write("puse todos los detalles que queria, espero te", ctx2, 5, 200, 1000,)
-        write("guste igual.", ctx2, 5, 200, 1100,)
+        write("animaciones que teníamos que hacer con Armando.", ctx2, 5, 200, 800,)
+
+        write("Eres la mejor hermana que cualquiera puede", ctx2, 5, 200, 1000,)
+        write("desear en esta vida.", ctx2, 5, 200, 1100,)
+        write("Te quiero con todo mi corazón, cosa que jamás", ctx2, 5, 200, 1300,)
+        write("cambiará.", ctx2, 5, 200, 1400,)
     }
 
 }
+
