@@ -4,3 +4,8 @@ Quiero compartirte que crear esta animación y las letras me costó bastante. Re
 Cuando finalmente terminé, ya eran las 3 de la tarde del domingo 11 de agosto. Aún me faltaba agregar el mensaje de las letras pequeñas y escribir tu carta, pero no por estar contra reloj iba a darte algo menor a lo que mereces (obvio mereces más que esto de todas formas). Así que me apuré, y orgullosamente puedo decir que, para esta ocasión tan especial, hice mi primera librería en JavaScript para poder dibujar las letras en el tamaño y grosor que quería. (Mientras escribía el código, usé una variable llamada grosor y cada vez que la utilizaba me acordaba de Spirit).
 
 Como sea, espero que te guste.
+
+Z             |\\            __, , , ----- , , _
+  Z         / ,  `. - ' ` '          --.      ;--, `- , , _
+    Zz    | ,4 -    )   ) -- ,__.       \    ( ` ' -- ,,,##>
+           ' ---- ' ' ( _ / --- '     ` ---' \ _ )
